@@ -10,7 +10,7 @@ The **Number Classification API** is a simple RESTful API that takes a number as
 - Fun fact (fetched from the Numbers API)
 
 ## 📡 Live Demo
-> https://stage-1-hng-number-classification-d9356pdi3.vercel.app/api/classify-number
+> https://stage-1-hng-number-classification-r1enzp08g.vercel.app/api/classify-number
 
 ## 🛠️ Features
 ✅ Check if a number is **Prime**  
