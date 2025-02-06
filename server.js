@@ -38,10 +38,15 @@ const getDigitSum = (num) => num.toString().split("").reduce((acc, d) => acc + N
 
 app.get("/api/classify-number", async (req, res) => {
   const { number } = req.query;
-  const num = parseInt(number, 10);
+
+  if (number === undefined) {
+    return res.status(400).json({ number: null, error: true });
+  }
+
+  const num = Number(number);
 
   if (isNaN(num)) {
-    return res.status(400).json({ number, error: true });
+    return res.status(400).json({ number: null, error: true });
   }
 
   const properties = [];
